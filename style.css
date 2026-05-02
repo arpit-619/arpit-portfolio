@@ -30,15 +30,17 @@ html {
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Bot Cursor Hide (Global) */
-body,
-a,
-button,
-.project-card,
-.metric-card,
-.skill-card,
-.card-base {
-  cursor: none !important;
+/* Custom Bot Cursor Hide on Desktop */
+@media (min-width: 768px) {
+  body,
+  a,
+  button,
+  .project-card,
+  .metric-card,
+  .skill-card,
+  .card-base {
+    cursor: none !important;
+  }
 }
 
 @layer components {

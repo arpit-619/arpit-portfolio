@@ -314,7 +314,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cursor = document.getElementById("custom-cursor");
     const cursorOutline = document.getElementById("custom-cursor-outline");
 
-    if (cursor && cursorOutline) {
+    if (cursor && cursorOutline && window.innerWidth >= 768) {
         document.addEventListener("mousemove", (e) => {
             const x = e.clientX;
             const y = e.clientY;
