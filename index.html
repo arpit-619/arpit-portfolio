@@ -21,6 +21,17 @@
   <body
     class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden w-full"
   >
+    <!-- Bot Progress Scroll Bar -->
+    <div
+      id="scroll-progress-container"
+      class="fixed top-0 left-0 w-full h-1 z-[100] bg-transparent pointer-events-none"
+    >
+      <div
+        id="scroll-progress-bar"
+        class="h-full bg-primary shadow-[0_0_15px_rgba(0,219,233,0.8)] transition-all duration-150 ease-out w-0"
+      ></div>
+    </div>
+
     <!-- Navigation Overlay -->
     <div id="nav-overlay" class="nav-overlay" style="z-index: 45"></div>
 
