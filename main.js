@@ -92,6 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     mobileMenu.classList.add('hidden');
                     mobileMenu.classList.remove('flex');
                     if(navOverlay) navOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
             }
         });
@@ -110,6 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     mobileMenu.classList.add('hidden');
                     mobileMenu.classList.remove('flex');
                     if(navOverlay) navOverlay.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
             }
         });
