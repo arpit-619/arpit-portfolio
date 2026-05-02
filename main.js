@@ -310,4 +310,40 @@ document.addEventListener("DOMContentLoaded", () => {
             progressBar.style.width = scrolled + "%";
         });
     }
+    // 7. Custom Bot Cursor Logic
+    const cursor = document.getElementById("custom-cursor");
+    const cursorOutline = document.getElementById("custom-cursor-outline");
+
+    if (cursor && cursorOutline && window.innerWidth >= 768) {
+        document.addEventListener("mousemove", (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+            
+            // Smoother trailing effect for the outline
+            cursorOutline.animate({
+                left: `${x}px`,
+                top: `${y}px`
+            }, { duration: 400, fill: "forwards" });
+        });
+
+        const targets = document.querySelectorAll("a, button, .project-card, .metric-card, .skill-card, .card-base, #theme-toggle, .scroll-to-contact");
+        targets.forEach(target => {
+            target.addEventListener("mouseenter", () => {
+                cursor.style.transform = "translate(-50%, -50%) scale(1.5)";
+                cursor.style.backgroundColor = "var(--secondary)";
+                cursorOutline.style.borderColor = "var(--secondary)";
+                cursorOutline.style.width = "48px";
+                cursorOutline.style.height = "48px";
+            });
+            target.addEventListener("mouseleave", () => {
+                cursor.style.transform = "translate(-50%, -50%) scale(1)";
+                cursor.style.backgroundColor = "var(--primary)";
+                cursorOutline.style.borderColor = "var(--primary)"; 
+                cursorOutline.style.width = "32px";
+                cursorOutline.style.height = "32px";
+            });
+        });
+    }
 });
