@@ -1,0 +1,943 @@
+<!doctype html>
+<html class="dark scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Arpit Alne - RPA Developer Portfolio</title>
+    <link rel="icon" type="image/png" href="/assets/Resume/image.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/style.css" rel="stylesheet" />
+    <script type="module" src="/main.js"></script>
+    <script src="/script.js"></script>
+  </head>
+
+  <body
+    class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container overflow-x-hidden w-full"
+  >
+    <!-- Navigation Overlay -->
+    <div id="nav-overlay" class="nav-overlay" style="z-index: 45"></div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="nav-container">
+      <div class="nav-content">
+        <div class="brand-home brand-logo">Arpit Alne</div>
+
+        <!-- Desktop Nav -->
+        <div class="hidden lg:flex items-center gap-6 xl:gap-8">
+          <a
+            class="nav-link nav-link-base nav-link-active"
+            href="#home"
+            data-target="home"
+          >
+            Home
+            <span class="nav-underline nav-underline-active"></span>
+          </a>
+          <a
+            class="nav-link nav-link-base nav-link-inactive"
+            href="#projects"
+            data-target="projects"
+          >
+            Projects
+            <span class="nav-underline nav-underline-inactive"></span>
+          </a>
+          <a
+            class="nav-link nav-link-base nav-link-inactive"
+            href="#experience"
+            data-target="experience"
+          >
+            Experience
+            <span class="nav-underline nav-underline-inactive"></span>
+          </a>
+          <a
+            class="nav-link nav-link-base nav-link-inactive"
+            href="#skills"
+            data-target="skills"
+          >
+            Skills
+            <span class="nav-underline nav-underline-inactive"></span>
+          </a>
+          <a
+            class="nav-link nav-link-base nav-link-inactive"
+            href="#contact"
+            data-target="contact"
+          >
+            Contact
+            <span class="nav-underline nav-underline-inactive"></span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 md:gap-4">
+          <!-- Theme Toggle - Now visible on all screens -->
+          <button
+            id="theme-toggle"
+            class="p-2 rounded-full hover:bg-surface transition-colors text-text-slate hover:text-primary flex items-center justify-center"
+          >
+            <span class="material-symbols-outlined dark:hidden">dark_mode</span>
+            <span class="material-symbols-outlined hidden dark:block"
+              >light_mode</span
+            >
+          </button>
+
+          <div class="hidden lg:flex items-center gap-4">
+            <div class="h-6 w-[1px] bg-border mx-1"></div>
+            <span
+              class="material-symbols-outlined text-[clamp(1.2rem,1.5vw,1.5rem)] text-text-slate hover:text-primary transition-all duration-300 ease-out cursor-pointer"
+              >terminal</span
+            >
+            <span
+              class="material-symbols-outlined text-[clamp(1.2rem,1.5vw,1.5rem)] text-text-slate hover:text-primary transition-all duration-300 ease-out cursor-pointer"
+              >bolt</span
+            >
+            <button class="btn-nav-accent scroll-to-contact ml-2">
+              Connect
+            </button>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden text-on-background opacity-80 hover:text-primary p-2 focus:outline-none transition-colors"
+          >
+            <span class="material-symbols-outlined text-2xl md:text-3xl"
+              >menu</span
+            >
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Dropdown -->
+      <div
+        id="mobile-menu"
+        class="lg:hidden hidden flex-col bg-surface border-b border-border absolute top-16 md:top-20 left-0 w-full p-6 gap-6 shadow-2xl backdrop-blur-xl transition-all duration-300 z-40"
+      >
+        <a
+          class="mobile-nav-link text-primary font-bold tracking-widest uppercase text-xs md:text-sm"
+          href="#home"
+          data-target="home"
+          >Home</a
+        >
+        <a
+          class="mobile-nav-link text-text-slate hover:text-on-background font-bold tracking-widest uppercase text-xs md:text-sm transition-colors"
+          href="#projects"
+          data-target="projects"
+          >Projects</a
+        >
+        <a
+          class="mobile-nav-link text-text-slate hover:text-on-background font-bold tracking-widest uppercase text-xs md:text-sm transition-colors"
+          href="#experience"
+          data-target="experience"
+          >Experience</a
+        >
+        <a
+          class="mobile-nav-link text-text-slate hover:text-on-background font-bold tracking-widest uppercase text-xs md:text-sm transition-colors"
+          href="#skills"
+          data-target="skills"
+          >Skills</a
+        >
+        <a
+          class="mobile-nav-link text-text-slate hover:text-on-background font-bold tracking-widest uppercase text-xs md:text-sm transition-colors"
+          href="#contact"
+          data-target="contact"
+          >Contact</a
+        >
+        <button
+          class="btn-primary w-full py-4 text-xs tracking-widest scroll-to-contact"
+        >
+          Connect
+        </button>
+      </div>
+    </nav>
+
+    <!-- 1. HOME SECTION & TERMINAL -->
+    <section
+      class="relative min-h-[100svh] pt-24 md:pt-32 pb-16 md:pb-24 overflow-hidden dot-grid flex flex-col justify-center"
+      id="home"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-background z-0 pointer-events-none opacity-50"
+      ></div>
+      <div
+        class="relative z-10 max-w-screen-2xl mx-auto px-4 md:px-8 w-full reveal"
+      >
+        <div class="grid xl:grid-cols-2 gap-12 xl:gap-16 items-center">
+          <!-- Hero Text -->
+          <div class="text-center xl:text-left">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 mb-6 md:mb-8 backdrop-blur-sm"
+            >
+              <span class="relative flex h-1.5 w-1.5 md:h-2 md:w-2">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-fixed-dim opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-1.5 w-1.5 md:h-2 md:w-2 bg-primary-fixed-dim"
+                ></span>
+              </span>
+              <span
+                class="text-[10px] md:text-xs font-bold tracking-wider uppercase text-primary"
+                >System Status: Optimizing Digital Futures</span
+              >
+            </div>
+
+            <h1
+              class="font-['Space_Grotesk'] leading-tight font-bold tracking-tight mb-4 md:mb-6"
+            >
+              <span class="hero-title">Hi, Arpit Alne</span><br />
+              <div
+                class="text-[clamp(1.2rem,2.5vw,2rem)] text-slate-200 font-medium flex items-center justify-center xl:justify-start w-full mt-2"
+              >
+                <span class="mr-3 text-text-slate opacity-50">|</span>
+                <span
+                  class="relative inline-flex items-center text-left min-w-[300px] md:min-w-[480px]"
+                >
+                  <span
+                    id="hero-typing-text"
+                    class="text-on-background whitespace-nowrap font-light tracking-wide"
+                  ></span>
+                  <span class="animate-pulse text-cyan-400 font-normal ml-1"
+                    >|</span
+                  >
+                </span>
+              </div>
+            </h1>
+
+            <p
+              class="font-body-lg text-[clamp(0.875rem,1.2vw,1.125rem)] text-text-slate max-w-2xl mx-auto xl:mx-0 mb-8 md:mb-10 leading-relaxed font-light"
+            >
+              Certified Blue Prism professional and results-driven Automation
+              Engineer. With 5 years of enterprise experience, I design robust
+              automation pipelines that cut manual processing by 80% and save
+              1,000+ hours annually.
+            </p>
+
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center xl:justify-start gap-4 md:gap-6"
+            >
+              <a href="#projects" class="w-full sm:w-auto btn-primary">
+                View Projects
+              </a>
+              <button class="w-full sm:w-auto btn-secondary scroll-to-contact">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          <!-- Terminal Console UI -->
+          <div class="terminal-glass-container group">
+            <!-- Subtle glow overlay inside terminal -->
+            <div class="terminal-glow-overlay"></div>
+
+            <!-- Terminal Header -->
+            <div class="terminal-header">
+              <div class="flex items-center gap-2">
+                <div
+                  class="w-3 h-3 rounded-full bg-red-500/80 shadow-[0_0_8px_rgba(239,68,68,0.4)]"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full bg-yellow-500/80 shadow-[0_0_8px_rgba(234,179,8,0.4)]"
+                ></div>
+                <div
+                  class="w-3 h-3 rounded-full bg-green-500/80 shadow-[0_0_8px_rgba(34,197,94,0.4)]"
+                ></div>
+              </div>
+              <div
+                class="text-[10px] md:text-xs terminal-text text-text-slate flex items-center gap-2 uppercase tracking-widest font-semibold opacity-80"
+              >
+                <span
+                  class="material-symbols-outlined text-[12px] md:text-[14px]"
+                  >terminal</span
+                >
+                automation_console_v2.0
+              </div>
+              <div class="flex items-center gap-2 opacity-60">
+                <span
+                  class="material-symbols-outlined text-[12px] md:text-[14px] text-cyan-400 animate-pulse"
+                  >memory</span
+                >
+              </div>
+            </div>
+            <!-- Terminal Body -->
+            <div class="terminal-body">
+              <div
+                id="terminal-content"
+                class="text-primary flex flex-col gap-3 leading-relaxed mb-3"
+              >
+                <!-- JS Will populate this -->
+              </div>
+              <div class="flex items-center gap-2">
+                <span
+                  class="text-secondary font-bold drop-shadow-[0_0_5px_rgba(182,0,248,0.2)]"
+                  >arpit@enterprise-rpa:~$</span
+                >
+                <span
+                  class="w-2.5 h-5 bg-primary animate-pulse inline-block shadow-[0_0_8px_rgba(8,145,178,0.4)]"
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="absolute -bottom-32 left-1/2 -translate-x-1/2 w-full max-w-[800px] h-[300px] md:h-[400px] bg-cyan-500/10 blur-[80px] md:blur-[120px] rounded-full pointer-events-none opacity-20"
+      ></div>
+    </section>
+
+    <!-- 2. PROJECTS SECTION -->
+    <section
+      class="section-padding max-w-screen-2xl mx-auto px-4 md:px-8 relative"
+      id="projects"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 md:mb-16 reveal gap-4 md:gap-6"
+      >
+        <div>
+          <h2 class="section-heading">Operational Excellence</h2>
+          <p class="section-subheading text-text-slate">
+            Featured Automation Case Studies & Workflows
+          </p>
+        </div>
+        <div class="hidden md:block">
+          <span class="badge-cyan">Scroll to explore</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 reveal">
+        <!-- Project 1 -->
+        <div class="project-card group">
+          <div class="project-card-header">
+            <span
+              class="material-symbols-outlined text-6xl md:text-7xl text-primary/40 group-hover:text-primary group-hover:scale-110 transition-all duration-700"
+              >manage_search</span
+            >
+          </div>
+          <div class="p-6 md:p-8 flex-1 flex flex-col">
+            <div class="flex flex-wrap gap-2 mb-4 md:mb-6">
+              <span class="tag-cyan">Blue Prism</span>
+              <span class="tag-purple">Salesforce API</span>
+            </div>
+            <h3
+              class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold mb-2 md:mb-3 text-on-background"
+            >
+              Duplicates Claim Management
+            </h3>
+            <p
+              class="text-text-slate text-[clamp(0.8rem,1vw,0.875rem)] leading-relaxed flex-1"
+            >
+              Reviews claim history across applications to identify duplicate
+              claims, reducing manual validation time by 40%.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card-purple group">
+          <div class="project-card-header-purple">
+            <span
+              class="material-symbols-outlined text-6xl md:text-7xl text-secondary/40 group-hover:text-secondary group-hover:scale-110 transition-all duration-700"
+              >picture_as_pdf</span
+            >
+          </div>
+          <div class="p-6 md:p-8 flex-1 flex flex-col">
+            <div class="flex flex-wrap gap-2 mb-4 md:mb-6">
+              <span class="tag-cyan">Blue Prism</span>
+              <span class="tag-purple">Mainframe</span>
+            </div>
+            <h3
+              class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold mb-2 md:mb-3 text-on-background"
+            >
+              RTMS Screen Scraping
+            </h3>
+            <p
+              class="text-text-slate text-[clamp(0.8rem,1vw,0.875rem)] leading-relaxed flex-1"
+            >
+              Captures complex plan information from RTMS Mainframe and
+              generates formatted PDF files automatically.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card group">
+          <div class="project-card-header">
+            <span
+              class="material-symbols-outlined text-6xl md:text-7xl text-primary/40 group-hover:text-primary group-hover:scale-110 transition-all duration-700"
+              >sync_alt</span
+            >
+          </div>
+          <div class="p-6 md:p-8 flex-1 flex flex-col">
+            <div class="flex flex-wrap gap-2 mb-4 md:mb-6">
+              <span class="tag-cyan">Blue Prism</span>
+              <span class="tag-purple">Appian App</span>
+            </div>
+            <h3
+              class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold mb-2 md:mb-3 text-on-background"
+            >
+              Update RTMS & Comments
+            </h3>
+            <p
+              class="text-text-slate text-[clamp(0.8rem,1vw,0.875rem)] leading-relaxed flex-1"
+            >
+              Retrieves Appian case comments securely via API to synchronize and
+              update RTMS Mainframe and SQL databases.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card-purple group">
+          <div class="project-card-header-purple">
+            <span
+              class="material-symbols-outlined text-6xl md:text-7xl text-secondary/40 group-hover:text-secondary group-hover:scale-110 transition-all duration-700"
+              >fact_check</span
+            >
+          </div>
+          <div class="p-6 md:p-8 flex-1 flex flex-col">
+            <div class="flex flex-wrap gap-2 mb-4 md:mb-6">
+              <span class="tag-cyan">Blue Prism</span>
+              <span class="tag-purple">SQL Database</span>
+            </div>
+            <h3
+              class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold mb-2 md:mb-3 text-on-background"
+            >
+              QC Process Orchestration
+            </h3>
+            <p
+              class="text-text-slate text-[clamp(0.8rem,1vw,0.875rem)] leading-relaxed flex-1"
+            >
+              Validates critical member info for QC. Automatically generates
+              business exceptions and sends daily analytical reports.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card group">
+          <div class="project-card-header">
+            <span
+              class="material-symbols-outlined text-6xl md:text-7xl text-primary/40 group-hover:text-primary group-hover:scale-110 transition-all duration-700"
+              >person_off</span
+            >
+          </div>
+          <div class="p-6 md:p-8 flex-1 flex flex-col">
+            <div class="flex flex-wrap gap-2 mb-4 md:mb-6">
+              <span class="tag-cyan">Blue Prism</span>
+              <span class="tag-purple">Salesforce</span>
+            </div>
+            <h3
+              class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold mb-2 md:mb-3 text-on-background"
+            >
+              Provider Suppression Bot
+            </h3>
+            <p
+              class="text-text-slate text-[clamp(0.8rem,1vw,0.875rem)] leading-relaxed flex-1"
+            >
+              Automates directory exclusion updates in Cactus Application,
+              reducing handling time from 10 minutes to just 2 minutes.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card-purple group">
+          <div class="project-card-header-purple">
+            <span
+              class="material-symbols-outlined text-6xl md:text-7xl text-secondary/40 group-hover:text-secondary group-hover:scale-110 transition-all duration-700"
+              >receipt_long</span
+            >
+          </div>
+          <div class="p-6 md:p-8 flex-1 flex flex-col">
+            <div class="flex flex-wrap gap-2 mb-4 md:mb-6">
+              <span class="tag-cyan">Power Automate</span>
+              <span class="tag-purple">ERP</span>
+            </div>
+            <h3
+              class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold mb-2 md:mb-3 text-on-background"
+            >
+              Invoice Processing Pipeline
+            </h3>
+            <p
+              class="text-text-slate text-[clamp(0.8rem,1vw,0.875rem)] leading-relaxed flex-1"
+            >
+              OCR data extraction from incoming PDF emails, seamless ERP record
+              creation, and generation of summary audit reports.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EXPERIENCE SECTION -->
+    <section class="section-subtle overflow-hidden w-full" id="experience">
+      <div class="max-w-screen-2xl mx-auto px-4 md:px-8 reveal">
+        <h2 class="section-heading text-center">Enterprise Experience</h2>
+
+        <div
+          class="grid lg:grid-cols-12 gap-8 lg:gap-16 items-start max-w-6xl mx-auto w-full"
+        >
+          <!-- Metrics Sidebar -->
+          <div class="lg:col-span-4 grid sm:grid-cols-2 lg:grid-cols-1 gap-6">
+            <div class="metric-card">
+              <span
+                class="material-symbols-outlined text-[clamp(2.5rem,4vw,3.5rem)] text-primary mb-3 md:mb-4"
+                >timer</span
+              >
+              <h4
+                class="text-[clamp(2rem,3vw,2.5rem)] font-bold text-on-background mb-2"
+              >
+                12k+
+              </h4>
+              <p
+                class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-text-slate"
+              >
+                Hours Saved Annually
+              </p>
+            </div>
+            <div class="metric-card">
+              <span
+                class="material-symbols-outlined text-[clamp(2.5rem,4vw,3.5rem)] text-secondary mb-3 md:mb-4"
+                >analytics</span
+              >
+              <h4
+                class="text-[clamp(2rem,3vw,2.5rem)] font-bold text-on-background mb-2"
+              >
+                99.9%
+              </h4>
+              <p
+                class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-text-slate"
+              >
+                Bot Accuracy Rate
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="timeline-line">
+            <div class="mb-12 md:mb-16 relative group">
+              <div
+                class="timeline-dot bg-primary shadow-[0_0_15px_rgba(8,145,178,0.3)] group-hover:scale-125 transition-transform"
+              ></div>
+              <div
+                class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2"
+              >
+                March 2026 - Present
+              </div>
+              <h3
+                class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold text-on-background mb-1"
+              >
+                Senior Software Engineer
+              </h3>
+              <p
+                class="text-sm md:text-base text-on-background opacity-80 mb-3 md:mb-4"
+              >
+                CGI
+              </p>
+              <p
+                class="text-[clamp(0.8rem,1vw,0.875rem)] text-text-slate leading-relaxed"
+              >
+                Spearheading L2/L3 production support for enterprise Blue Prism
+                automations. Responsible for real-time Control Room monitoring,
+                proactive session failure resolution, and maintaining rigorous
+                strict business SLA compliance globally.
+              </p>
+            </div>
+
+            <div class="relative group">
+              <div
+                class="timeline-dot bg-secondary shadow-[0_0_15px_rgba(126,34,206,0.2)] group-hover:scale-125 transition-transform"
+              ></div>
+              <div
+                class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-secondary mb-2"
+              >
+                July 2021 - March 2026
+              </div>
+              <h3
+                class="font-['Space_Grotesk'] text-[clamp(1.25rem,1.8vw,1.5rem)] font-bold text-on-background mb-1"
+              >
+                Senior RPA Developer
+              </h3>
+              <p
+                class="text-sm md:text-base text-on-background opacity-80 mb-3 md:mb-4"
+              >
+                Perficient, Inc.
+              </p>
+              <p
+                class="text-[clamp(0.8rem,1vw,0.875rem)] text-text-slate leading-relaxed"
+              >
+                Delivered 20+ full-lifecycle automation projects primarily
+                utilizing Blue Prism, driving a massive 50–60% reduction in
+                departmental manual effort. Engineered cross-platform solutions
+                integrating UiPath, Microsoft Power Automate, and ServiceNow to
+                form scalable robotic ecosystems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. SKILLS SECTION -->
+    <section
+      class="section-padding max-w-screen-2xl mx-auto px-4 md:px-8 relative"
+      id="skills"
+    >
+      <div class="text-center mb-10 md:mb-16 reveal">
+        <h2 class="section-heading">Technological Arsenal</h2>
+        <p class="section-subheading text-text-slate">
+          Tools and languages powering the automation engine
+        </p>
+      </div>
+
+      <div
+        class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6 reveal max-w-6xl mx-auto"
+      >
+        <div class="skill-card">
+          <span
+            class="material-symbols-outlined text-[clamp(2rem,3vw,2.5rem)] text-primary mb-3 md:mb-4"
+            >memory</span
+          >
+          <h4
+            class="font-['Space_Grotesk'] text-lg md:text-xl font-bold text-on-background mb-1 md:mb-2"
+          >
+            Blue Prism
+          </h4>
+          <p
+            class="text-[10px] font-bold tracking-widest uppercase text-text-slate"
+          >
+            v7.x Advanced
+          </p>
+        </div>
+        <div class="skill-card">
+          <span
+            class="material-symbols-outlined text-[clamp(2rem,3vw,2.5rem)] text-secondary mb-3 md:mb-4"
+            >cloud_done</span
+          >
+          <h4
+            class="font-['Space_Grotesk'] text-lg md:text-xl font-bold text-on-background mb-1 md:mb-2"
+          >
+            Power Automate
+          </h4>
+          <p
+            class="text-[10px] font-bold tracking-widest uppercase text-text-slate"
+          >
+            Desktop Flows
+          </p>
+        </div>
+        <div class="skill-card">
+          <span
+            class="material-symbols-outlined text-[clamp(2rem,3vw,2.5rem)] text-primary mb-3 md:mb-4"
+            >terminal</span
+          >
+          <h4
+            class="font-['Space_Grotesk'] text-lg md:text-xl font-bold text-on-background mb-1 md:mb-2"
+          >
+            UiPath
+          </h4>
+          <p
+            class="text-[10px] font-bold tracking-widest uppercase text-text-slate"
+          >
+            REFramework
+          </p>
+        </div>
+        <div class="skill-card">
+          <span
+            class="material-symbols-outlined text-[clamp(2rem,3vw,2.5rem)] text-secondary mb-3 md:mb-4"
+            >code</span
+          >
+          <h4
+            class="font-['Space_Grotesk'] text-lg md:text-xl font-bold text-on-background mb-1 md:mb-2"
+          >
+            Development
+          </h4>
+          <p
+            class="text-[10px] font-bold tracking-widest uppercase text-text-slate"
+          >
+            C#, Python, JS
+          </p>
+        </div>
+        <div class="skill-card">
+          <span
+            class="material-symbols-outlined text-[clamp(2rem,3vw,2.5rem)] text-primary mb-3 md:mb-4"
+            >psychology</span
+          >
+          <h4
+            class="font-['Space_Grotesk'] text-lg md:text-xl font-bold text-on-background mb-1 md:mb-2"
+          >
+            AI & APIs
+          </h4>
+          <p
+            class="text-[10px] font-bold tracking-widest uppercase text-text-slate"
+          >
+            Gen AI, REST, N8N
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CERTIFICATIONS SECTION -->
+    <section class="section-subtle overflow-hidden w-full" id="certifications">
+      <div class="max-w-screen-2xl mx-auto px-4 md:px-8">
+        <div class="text-center mb-10 md:mb-16 reveal">
+          <h2 class="section-heading">Credentials & Verification</h2>
+          <p class="section-subheading text-text-slate">
+            Validated industry expertise and architectural proficiency
+          </p>
+        </div>
+
+        <div
+          class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 reveal max-w-5xl mx-auto w-full"
+        >
+          <div class="card-base p-5 md:p-6 flex items-center gap-4">
+            <span
+              class="material-symbols-outlined text-3xl md:text-4xl text-primary flex-shrink-0"
+              >verified</span
+            >
+            <p
+              class="font-bold text-on-background text-sm md:text-base leading-tight"
+            >
+              Blue Prism Certified Associate Developer
+            </p>
+          </div>
+          <div class="card-base p-5 md:p-6 flex items-center gap-4">
+            <span
+              class="material-symbols-outlined text-3xl md:text-4xl text-secondary flex-shrink-0"
+              >verified</span
+            >
+            <p
+              class="font-bold text-on-background text-sm md:text-base leading-tight"
+            >
+              Blue Prism Certified Developer
+            </p>
+          </div>
+          <div class="card-base p-5 md:p-6 flex items-center gap-4">
+            <span
+              class="material-symbols-outlined text-3xl md:text-4xl text-primary flex-shrink-0"
+              >workspace_premium</span
+            >
+            <p
+              class="font-bold text-on-background text-sm md:text-base leading-tight"
+            >
+              Blue Prism Professional Certification
+            </p>
+          </div>
+          <div class="card-base p-5 md:p-6 flex items-center gap-4">
+            <span
+              class="material-symbols-outlined text-3xl md:text-4xl text-secondary flex-shrink-0"
+              >school</span
+            >
+            <p
+              class="font-bold text-on-background text-sm md:text-base leading-tight"
+            >
+              UiPath Automation Training
+            </p>
+          </div>
+          <div class="card-base p-5 md:p-6 flex items-center gap-4">
+            <span
+              class="material-symbols-outlined text-3xl md:text-4xl text-primary flex-shrink-0"
+              >emoji_events</span
+            >
+            <p
+              class="font-bold text-on-background text-sm md:text-base leading-tight"
+            >
+              Power Automate Certificate
+            </p>
+          </div>
+          <div class="card-base p-5 md:p-6 flex items-center gap-4">
+            <span
+              class="material-symbols-outlined text-3xl md:text-4xl text-secondary flex-shrink-0"
+              >admin_panel_settings</span
+            >
+            <p
+              class="font-bold text-on-background text-sm md:text-base leading-tight"
+            >
+              ServiceNow Certified SysAdmin
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONTACT SECTION -->
+    <section
+      class="section-padding relative overflow-hidden w-full"
+      id="contact"
+    >
+      <div
+        class="absolute inset-0 dot-grid pointer-events-none opacity-50"
+      ></div>
+      <div
+        class="max-w-screen-xl mx-auto px-4 md:px-8 reveal relative z-10 w-full"
+      >
+        <div
+          class="glass-card p-6 md:p-12 lg:p-16 rounded-[2rem] border-border shadow-2xl backdrop-blur-2xl grid lg:grid-cols-2 gap-10 md:gap-16 relative overflow-hidden"
+        >
+          <div
+            class="absolute top-0 right-0 w-full max-w-[500px] h-[500px] bg-cyan-500/10 blur-[120px] md:blur-[150px] pointer-events-none -z-10 rounded-full opacity-40"
+          ></div>
+
+          <div>
+            <h2 class="section-heading">Let's Automate the Future</h2>
+            <p
+              class="text-on-background opacity-80 text-[clamp(0.875rem,1.2vw,1.125rem)] mb-8 md:mb-12 leading-relaxed font-light"
+            >
+              Currently available for enterprise consulting and high-impact RPA
+              architecture roles. If you have a workflow in need of
+              orchestration, let's talk.
+            </p>
+
+            <div class="space-y-6 md:space-y-8">
+              <div class="flex items-center gap-4 md:gap-6 group">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-primary group-hover:scale-110 group-hover:bg-cyan-500/20 transition-all duration-300 flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-2xl md:text-3xl"
+                    >mail</span
+                  >
+                </div>
+                <div class="min-w-0">
+                  <p
+                    class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-text-slate mb-1 truncate"
+                  >
+                    Email Address
+                  </p>
+                  <p
+                    class="font-bold text-on-background text-sm md:text-lg truncate"
+                  >
+                    arpitalne619@gmail.com
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4 md:gap-6 group">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-secondary group-hover:scale-110 group-hover:bg-purple-500/20 transition-all duration-300 flex-shrink-0"
+                >
+                  <span class="material-symbols-outlined text-2xl md:text-3xl"
+                    >phone_iphone</span
+                  >
+                </div>
+                <div class="min-w-0">
+                  <p
+                    class="text-[10px] md:text-xs font-bold tracking-widest uppercase text-text-slate mb-1 truncate"
+                  >
+                    Phone Number
+                  </p>
+                  <p
+                    class="font-bold text-on-background text-sm md:text-lg truncate"
+                  >
+                    +91 9284825897
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form id="contact-form" class="space-y-4 md:space-y-6">
+            <input
+              type="hidden"
+              name="access_key"
+              value="938b57d0-a25e-4a36-8127-9380a41e98cb"
+            />
+            <div class="grid sm:grid-cols-2 gap-4 md:gap-6">
+              <div class="space-y-1.5 md:space-y-2">
+                <label class="input-label">Full Name</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+              <div class="space-y-1.5 md:space-y-2">
+                <label class="input-label">Company</label>
+                <input
+                  class="input-field"
+                  type="text"
+                  name="company"
+                  placeholder="Acme Corp"
+                />
+              </div>
+            </div>
+            <div class="space-y-1.5 md:space-y-2">
+              <label class="input-label">Subject</label>
+              <input
+                class="input-field"
+                type="text"
+                name="subject"
+                placeholder="Automation Inquiry"
+                required
+              />
+            </div>
+            <div class="space-y-1.5 md:space-y-2">
+              <label class="input-label">Message Body</label>
+              <textarea
+                class="input-field resize-none"
+                name="message"
+                rows="4"
+                placeholder="Let's build something..."
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              id="submit-btn"
+              class="btn-primary w-full transition-all duration-300"
+            >
+              Transmit Message
+            </button>
+            <p
+              id="form-result"
+              class="text-sm text-center hidden font-medium mt-4"
+            ></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-surface border-t border-border w-full overflow-hidden">
+      <div
+        class="flex flex-col md:flex-row justify-between items-center px-4 md:px-8 lg:px-12 py-8 md:py-12 gap-6 md:gap-8 font-['Space_Grotesk'] text-[10px] md:text-xs font-bold tracking-widest uppercase max-w-screen-2xl mx-auto w-full text-center md:text-left"
+      >
+        <div class="text-primary">
+          © 2026 ARPIT ALNE. ORCHESTRATING DIGITAL FUTURES.
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 md:gap-8 items-center">
+          <a
+            class="text-text-slate hover:text-primary transition-colors"
+            href="https://linkedin.com/in/arpit-alne"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            class="text-text-slate hover:text-primary transition-colors"
+            href="https://github.com/arpit-alne"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            class="text-text-slate hover:text-primary transition-colors"
+            href="#"
+            >Documentation</a
+          >
+        </div>
+        <div class="flex gap-4">
+          <span
+            class="material-symbols-outlined text-text-slate hover:text-primary cursor-pointer"
+            >robot</span
+          >
+          <span
+            class="material-symbols-outlined text-text-slate hover:text-primary cursor-pointer"
+            >security</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

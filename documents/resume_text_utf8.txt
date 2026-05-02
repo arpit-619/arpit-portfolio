@@ -1,0 +1,111 @@
+Arpit Gaurav Alne 
+Senior RPA Developer 
+ arpitalne619@gmail.com github.com/arpit-alne 
+  +91 9284825897  linkedin.com/in/arpit-alne 
+PROFESSIONAL SUMMARY                                                                                                                                                                            
+Certified Blue Prism professional and results-driven RPA Developer with 5 years’ experience in Blue Prism RPA technology, 
+delivering robust, end-to-end automations from design to go-live. Proven ability to cut manual processing time by up to 80%, 
+automate 1,000+ hours annually, and improve process accuracy by 25%, with operational cost savings. Skilled in C#, SQL, 
+HTML, JavaScript, and JIRA, with a track record of streamlining complex business processes at scale. 
+PROFESSIONAL EXPERIENCE                                                                                                                                                                     
+1. Company Name : Perficient, Inc. 
+• Designation : Automation – Senior RPA Developer 
+• Duration  : July 2021 – March 2026  
+• Responsibilities :  
+o Delivered 20+ automation projects built primarily in Blue Prism, leveraging key components such as Objects, 
+Processes, Work Queues, Schedules, and Credentials, resulting in a 50–60% reduction in manual effort.  
+o Collaborated with business analysts and SMEs to identify and automate complex workflows, ensuring scalable 
+and business-aligned automation solutions. 
+o Conducted unit testing, debugging, and production support, maintaining process stability and continuously 
+improving automation reliability. 
+o Worked across multiple automation platforms including UiPath, Appian, Microsoft Power Automate and 
+ServiceNow ITMS tool applying best practices to design scalable, high-performing RPA solutions. 
+2. Company Name : CGI 
+• Designation : Senior Software Engineer 
+• Duration  : March 2026 – Present 
+• Responsibilities :  
+o Provided L2/L3 production support for Blue Prism automations and ensured smooth business operations  
+o Monitored bots and queues through Control Room, handled failed sessions, and ensured SLA compliance 
+ 
+TECHNICAL SKILLS                                                                                                                                                                                              
+ 
+PROJECTS WORKED ON                                                                                                                                                                                                                                         
+1. Project Title                               : Duplicates Claim Management and Enhancement 
+Client : Blue Cross Blue Shield of Massachusetts (BCBSMA) 
+Application used  : RPA – Blueprism, Mainframe Application, Excel, Web Application, Salesforce API 
+ Briefing                 : The Duplicate Claim Check process reviews claim history across multiple applications to 
+identify and manage duplicate claims by checking if a service has already been paid.  Developed end-to-end automation 
+solutions, reducing manual processing time by 40%. Improved accuracy of duplicate claim detection by 25%, resulting in 
+• RPA Tool:  
+o Blue Prism v7.x (Advance) 
+o UiPath, Power Automate Desktop (Basic) 
+• RPA components - Process Studio, Object Studio, Work 
+Queue, Control Room, Schedular, Package, System Manager, 
+UiPath Studio, UiPath REFramework, Orchestrator, Version 
+Control, Login Agent, Credential Manager, Environment 
+Variable, Web API Services. 
+• Automation Type : Web, Desktop, Mainframe, Excel , PDF, 
+Email, Database Automation, Surface Automation, SAP, API, 
+OCR. 
+• Programming Languages:  HTML, CSS, 
+JavaScript, Python, Java, C#, VB, SQL. 
+• REST / SOAP API 
+• JIRA / ServiceNow Ticketing Tool 
+• Generative AI 
+• N8N 
+• Documentation: PDD, SDD, Test Case, Process 
+Flow and Reporting. 
+
+significant cost savings. 
+2. Project Title : RTMS Mainframe Application Screen Scrap  
+Client : Blue Cross Blue Shield of Massachusetts (BCBSMA) 
+Application used   : RPA – Blueprism, Mainframe Application, MS Word, PDF, Excel  
+Briefing : This process is to capture the information  of various plans from RTMS Application and 
+Generate the PDF file of various screen of RTMS, significantly reduced the manual effort involved in validating plans 
+3. Project Title : Update RTMS and Member Rights Comments Process  
+Client : Blue Cross Blue Shield of Massachusetts (BCBSMA) 
+Application used   : RPA – Blueprism, Mainframe Application, Excel  
+ Briefing : The Update RTMS and Member Rights Comments process involves retrieving case 
+comments from Appian via API, updating them in the RTMS Mainframe and SQL Database, and developing a reporting 
+bot to send daily QC reports. 
+4. Project Title : QC Process for Update Comments Process  
+Client : Blue Cross Blue Shield of Massachusetts (BCBSMA) 
+Application used   : RPA – Blueprism, Mainframe Application, Excel, Web Application 
+ Briefing : The process involves validating member information and comments in a third -party 
+application for QC. If discrepancies are found, a Business Exception is sent. After correction, the QC bot reprocesses the 
+case. Additionally, a reporting bot sends daily QC reports, that helps business team efficiency. 
+5. Project Title : Provider Suppression and Un-Suppression  
+Client : Blue Cross Blue Shield of Massachusetts (BCBSMA) 
+Application used   : RPA – Blueprism, Excel, Sympler Web Application, Salesforce API 
+ Briefing :The Provider Suppression and Un-Suppression process automates checking/unchecking 
+the 'Directory Exclusion' checkbox in the Cactus Application based on Excel inputs. This bot reduces errors and cuts down 
+manual efforts from 10 min to 2 min and generates a report for review. 
+6. Project Title : Invoice Processing Workflow 
+Application used   : RPA – Power Automate Desktop, Outlook, PDF 
+Briefing : Invoice Processing Automation simplifies the entire workflow — from receiving invoices 
+via email to recording them in the ERP system. The Bot automatically extracts key details from PDFs, validates the data, 
+and inputs it seamlessly using Power Automate Desktop.  It then generates an Excel report and sends a summary email, 
+significantly reducing manual effort, minimizing errors, and improving overall efficiency. 
+ACADEMIC DETAILS                                                                                                                                                                                 
+ 
+CERTIFICATION                                                                                                                                                                                                     
+• Blue Prism Certified Associate Developer – Link 
+• Blue Prism Certified Developer – Link 
+• Blue Prism Professional Certification (LinkedIn) - Link 
+• UiPath Automation Training Certificate of Completion 12 
+hours - Link 
+• Blue Prism Professional Developer Certificate of 
+Completion 98 hours - Link 
+• Power Automate Certificate (Udemy) - Link 
+• ServiceNow Certified System Administrator - Link 
+• Appreciation and Shoutout - Link 
+ 
+ 
+Year Degree University/Board School/College CGPA 
+2017-21 BE (IT) Rashtrasant Tukdoji Maharaj 
+Nagpur University 
+S.B Jain Institute of Technology 
+Management & Research 8.20 
+2016-17 H.S.C CBSE Reliance Foundation school 6.20 
+2014-15 S.S.C CBSE Reliance Foundation school 6.60 
+
